@@ -1,0 +1,967 @@
+\makeatletter
+\newcommand{\linkref}[1]{\csname #1@link\endcsname}
+\newcommand{\labelref}[1]{\csname #1@label\endcsname}
+\newcommand{\pagewref}[1]{\csname #1@page\endcsname}
+\newcommand{\refweb}[1]{\href{\linkref{#1}}{\labelref{#1}}}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike0@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#section.1}
+\expandafter\newcommand\csname prAtEnd:sectionlike0@label\endcsname{I.}
+\expandafter\newcommand\csname prAtEnd:sectionlike0@page\endcsname{1}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike1@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.1.1}
+\expandafter\newcommand\csname prAtEnd:sectionlike1@label\endcsname{A.}
+\expandafter\newcommand\csname prAtEnd:sectionlike1@page\endcsname{2}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike2@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.1.2}
+\expandafter\newcommand\csname prAtEnd:sectionlike2@label\endcsname{B.}
+\expandafter\newcommand\csname prAtEnd:sectionlike2@page\endcsname{2}
+
+\expandafter\newcommand\csname sec:gen:approach@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.1.2}
+\expandafter\newcommand\csname sec:gen:approach@label\endcsname{B.}
+\expandafter\newcommand\csname sec:gen:approach@page\endcsname{2}
+
+\expandafter\newcommand\csname eq:model:Y=TR(X)+N@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.1}
+\expandafter\newcommand\csname eq:model:Y=TR(X)+N@label\endcsname{1}
+\expandafter\newcommand\csname eq:model:Y=TR(X)+N@page\endcsname{2}
+
+\expandafter\newcommand\csname eq:covariance:functions:general:1@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.2a}
+\expandafter\newcommand\csname eq:covariance:functions:general:1@label\endcsname{2a}
+\expandafter\newcommand\csname eq:covariance:functions:general:1@page\endcsname{2}
+
+\expandafter\newcommand\csname eq:covariance:functions:general:2@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.2b}
+\expandafter\newcommand\csname eq:covariance:functions:general:2@label\endcsname{2b}
+\expandafter\newcommand\csname eq:covariance:functions:general:2@page\endcsname{2}
+
+\expandafter\newcommand\csname eq:covariance:functions:general@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#AMS.1}
+\expandafter\newcommand\csname eq:covariance:functions:general@label\endcsname{2}
+\expandafter\newcommand\csname eq:covariance:functions:general@page\endcsname{2}
+
+\expandafter\newcommand\csname eq:relation:multilinear:equations@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.3a}
+\expandafter\newcommand\csname eq:relation:multilinear:equations@label\endcsname{3a}
+\expandafter\newcommand\csname eq:relation:multilinear:equations@page\endcsname{2}
+
+\expandafter\newcommand\csname eq:U_linear@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.3b}
+\expandafter\newcommand\csname eq:U_linear@label\endcsname{3b}
+\expandafter\newcommand\csname eq:U_linear@page\endcsname{2}
+
+\expandafter\newcommand\csname thmt@@prAtEndRestateii@data@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.3c}
+\expandafter\newcommand\csname thmt@@prAtEndRestateii@data@label\endcsname{\def \theequation {\@arabic {\c@equation }}\def \theHequation {(restate \theHthmt@dummyctr )3}\setcounter {equation}{3}}
+\expandafter\newcommand\csname thmt@@prAtEndRestateii@data@page\endcsname{2}
+
+\expandafter\newcommand\csname thmt@@prAtEndRestateii@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.1}
+\expandafter\newcommand\csname thmt@@prAtEndRestateii@label\endcsname{1}
+\expandafter\newcommand\csname thmt@@prAtEndRestateii@page\endcsname{2}
+
+\expandafter\newcommand\csname thm:prAtEndii@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.1}
+\expandafter\newcommand\csname thm:prAtEndii@label\endcsname{1}
+\expandafter\newcommand\csname thm:prAtEndii@page\endcsname{2}
+
+\expandafter\newcommand\csname theo:eigmvs:noise:free@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.1}
+\expandafter\newcommand\csname theo:eigmvs:noise:free@label\endcsname{1}
+\expandafter\newcommand\csname theo:eigmvs:noise:free@page\endcsname{2}
+
+\expandafter\newcommand\csname eq:sign@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.4}
+\expandafter\newcommand\csname eq:sign@label\endcsname{4}
+\expandafter\newcommand\csname eq:sign@page\endcsname{2}
+
+\expandafter\newcommand\csname thmt@@prAtEndRestateiii@data@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.4}
+\expandafter\newcommand\csname thmt@@prAtEndRestateiii@data@label\endcsname{\def \theequation {\@arabic {\c@equation }}\def \theHequation {(restate \theHthmt@dummyctr )4}\setcounter {equation}{4}}
+\expandafter\newcommand\csname thmt@@prAtEndRestateiii@data@page\endcsname{2}
+
+\expandafter\newcommand\csname thmt@@prAtEndRestateiii@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#corollary.1}
+\expandafter\newcommand\csname thmt@@prAtEndRestateiii@label\endcsname{1}
+\expandafter\newcommand\csname thmt@@prAtEndRestateiii@page\endcsname{2}
+
+\expandafter\newcommand\csname thm:prAtEndiii@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#corollary.1}
+\expandafter\newcommand\csname thm:prAtEndiii@label\endcsname{1}
+\expandafter\newcommand\csname thm:prAtEndiii@page\endcsname{2}
+
+\expandafter\newcommand\csname cor:scaled:relation@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#corollary.1}
+\expandafter\newcommand\csname cor:scaled:relation@label\endcsname{1}
+\expandafter\newcommand\csname cor:scaled:relation@page\endcsname{2}
+
+\expandafter\newcommand\csname eq:signal:estimation@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.5}
+\expandafter\newcommand\csname eq:signal:estimation@label\endcsname{5}
+\expandafter\newcommand\csname eq:signal:estimation@page\endcsname{2}
+
+\expandafter\newcommand\csname alg:gen:app@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#algorithm.1}
+\expandafter\newcommand\csname alg:gen:app@label\endcsname{1}
+\expandafter\newcommand\csname alg:gen:app@page\endcsname{3}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike3@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.1.3}
+\expandafter\newcommand\csname prAtEnd:sectionlike3@label\endcsname{C.}
+\expandafter\newcommand\csname prAtEnd:sectionlike3@page\endcsname{3}
+
+\expandafter\newcommand\csname sec:COEF:approach@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.1.3}
+\expandafter\newcommand\csname sec:COEF:approach@label\endcsname{C.}
+\expandafter\newcommand\csname sec:COEF:approach@page\endcsname{3}
+
+\expandafter\newcommand\csname alg:eigmv:extraction@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#algorithm.2}
+\expandafter\newcommand\csname alg:eigmv:extraction@label\endcsname{2}
+\expandafter\newcommand\csname alg:eigmv:extraction@page\endcsname{3}
+
+\expandafter\newcommand\csname eq:coefficients:of:P:main:body@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.6}
+\expandafter\newcommand\csname eq:coefficients:of:P:main:body@label\endcsname{6}
+\expandafter\newcommand\csname eq:coefficients:of:P:main:body@page\endcsname{3}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike4@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsubsection.1.3.1}
+\expandafter\newcommand\csname prAtEnd:sectionlike4@label\endcsname{1)}
+\expandafter\newcommand\csname prAtEnd:sectionlike4@page\endcsname{3}
+
+\expandafter\newcommand\csname sec:REL-COEF@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsubsection.1.3.1}
+\expandafter\newcommand\csname sec:REL-COEF@label\endcsname{1)}
+\expandafter\newcommand\csname sec:REL-COEF@page\endcsname{3}
+
+\expandafter\newcommand\csname thmt@@prAtEndRestateiv@data@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsubsection.1.3.1}
+\expandafter\newcommand\csname thmt@@prAtEndRestateiv@data@label\endcsname{\def \theequation {\@arabic {\c@equation }}\def \theHequation {(restate \theHthmt@dummyctr )6}\setcounter {equation}{6}}
+\expandafter\newcommand\csname thmt@@prAtEndRestateiv@data@page\endcsname{3}
+
+\expandafter\newcommand\csname thmt@@prAtEndRestateiv@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.2}
+\expandafter\newcommand\csname thmt@@prAtEndRestateiv@label\endcsname{2}
+\expandafter\newcommand\csname thmt@@prAtEndRestateiv@page\endcsname{3}
+
+\expandafter\newcommand\csname thm:prAtEndiv@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.2}
+\expandafter\newcommand\csname thm:prAtEndiv@label\endcsname{2}
+\expandafter\newcommand\csname thm:prAtEndiv@page\endcsname{3}
+
+\expandafter\newcommand\csname theo:coefficients@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.2}
+\expandafter\newcommand\csname theo:coefficients@label\endcsname{2}
+\expandafter\newcommand\csname theo:coefficients@page\endcsname{3}
+
+\expandafter\newcommand\csname eq:sys:rot:trans:CGA@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.7a}
+\expandafter\newcommand\csname eq:sys:rot:trans:CGA@label\endcsname{7a}
+\expandafter\newcommand\csname eq:sys:rot:trans:CGA@page\endcsname{3}
+
+\expandafter\newcommand\csname eq:sys:rot:trans:CGA:Q@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.7b}
+\expandafter\newcommand\csname eq:sys:rot:trans:CGA:Q@label\endcsname{7b}
+\expandafter\newcommand\csname eq:sys:rot:trans:CGA:Q@page\endcsname{3}
+
+\expandafter\newcommand\csname eq:coefficients:CiTRP:CiRTQ:1@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.8a}
+\expandafter\newcommand\csname eq:coefficients:CiTRP:CiRTQ:1@label\endcsname{8a}
+\expandafter\newcommand\csname eq:coefficients:CiTRP:CiRTQ:1@page\endcsname{3}
+
+\expandafter\newcommand\csname eq:coefficients:CiTRP:CiRTQ:2@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.8b}
+\expandafter\newcommand\csname eq:coefficients:CiTRP:CiRTQ:2@label\endcsname{8b}
+\expandafter\newcommand\csname eq:coefficients:CiTRP:CiRTQ:2@page\endcsname{3}
+
+\expandafter\newcommand\csname eq:coefficients:CiTRP:CiRTQ@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#AMS.2}
+\expandafter\newcommand\csname eq:coefficients:CiTRP:CiRTQ@label\endcsname{8}
+\expandafter\newcommand\csname eq:coefficients:CiTRP:CiRTQ@page\endcsname{3}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike5@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsubsection.1.3.2}
+\expandafter\newcommand\csname prAtEnd:sectionlike5@label\endcsname{2)}
+\expandafter\newcommand\csname prAtEnd:sectionlike5@page\endcsname{3}
+
+\expandafter\newcommand\csname sec:EST-R-T@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsubsection.1.3.2}
+\expandafter\newcommand\csname sec:EST-R-T@label\endcsname{2)}
+\expandafter\newcommand\csname sec:EST-R-T@page\endcsname{3}
+
+\expandafter\newcommand\csname thmt@@prAtEndRestatev@data@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsubsection.1.3.2}
+\expandafter\newcommand\csname thmt@@prAtEndRestatev@data@label\endcsname{\def \theequation {\@arabic {\c@equation }}\def \theHequation {(restate \theHthmt@dummyctr )8}\setcounter {equation}{8}}
+\expandafter\newcommand\csname thmt@@prAtEndRestatev@data@page\endcsname{3}
+
+\expandafter\newcommand\csname thmt@@prAtEndRestatev@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.3}
+\expandafter\newcommand\csname thmt@@prAtEndRestatev@label\endcsname{3}
+\expandafter\newcommand\csname thmt@@prAtEndRestatev@page\endcsname{3}
+
+\expandafter\newcommand\csname thm:prAtEndv@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.3}
+\expandafter\newcommand\csname thm:prAtEndv@label\endcsname{3}
+\expandafter\newcommand\csname thm:prAtEndv@page\endcsname{3}
+
+\expandafter\newcommand\csname theo:rot:opt@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.3}
+\expandafter\newcommand\csname theo:rot:opt@label\endcsname{3}
+\expandafter\newcommand\csname theo:rot:opt@page\endcsname{3}
+
+\expandafter\newcommand\csname eq:noisy:relation:Bi:Ai@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.9a}
+\expandafter\newcommand\csname eq:noisy:relation:Bi:Ai@label\endcsname{9a}
+\expandafter\newcommand\csname eq:noisy:relation:Bi:Ai@page\endcsname{3}
+
+\expandafter\newcommand\csname eq:multilinear:function:opt:rot@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.9c}
+\expandafter\newcommand\csname eq:multilinear:function:opt:rot@label\endcsname{9c}
+\expandafter\newcommand\csname eq:multilinear:function:opt:rot@page\endcsname{4}
+
+\expandafter\newcommand\csname eq:cost:function:opt:trans@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.10}
+\expandafter\newcommand\csname eq:cost:function:opt:trans@label\endcsname{10}
+\expandafter\newcommand\csname eq:cost:function:opt:trans@page\endcsname{4}
+
+\expandafter\newcommand\csname thmt@@prAtEndRestatevi@data@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.10}
+\expandafter\newcommand\csname thmt@@prAtEndRestatevi@data@label\endcsname{\def \theequation {\@arabic {\c@equation }}\def \theHequation {(restate \theHthmt@dummyctr )10}\setcounter {equation}{10}}
+\expandafter\newcommand\csname thmt@@prAtEndRestatevi@data@page\endcsname{4}
+
+\expandafter\newcommand\csname thmt@@prAtEndRestatevi@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.4}
+\expandafter\newcommand\csname thmt@@prAtEndRestatevi@label\endcsname{4}
+\expandafter\newcommand\csname thmt@@prAtEndRestatevi@page\endcsname{4}
+
+\expandafter\newcommand\csname thm:prAtEndvi@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.4}
+\expandafter\newcommand\csname thm:prAtEndvi@label\endcsname{4}
+\expandafter\newcommand\csname thm:prAtEndvi@page\endcsname{4}
+
+\expandafter\newcommand\csname theo:opt:trans@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.4}
+\expandafter\newcommand\csname theo:opt:trans@label\endcsname{4}
+\expandafter\newcommand\csname theo:opt:trans@page\endcsname{4}
+
+\expandafter\newcommand\csname eq:t:opt:opt:trans@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.11a}
+\expandafter\newcommand\csname eq:t:opt:opt:trans@label\endcsname{11a}
+\expandafter\newcommand\csname eq:t:opt:opt:trans@page\endcsname{4}
+
+\expandafter\newcommand\csname eq:sum:squares:opt:trans@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.11b}
+\expandafter\newcommand\csname eq:sum:squares:opt:trans@label\endcsname{11b}
+\expandafter\newcommand\csname eq:sum:squares:opt:trans@page\endcsname{4}
+
+\expandafter\newcommand\csname eq:t:opt:opt:trans:sum:squares@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.11b}
+\expandafter\newcommand\csname eq:t:opt:opt:trans:sum:squares@label\endcsname{11}
+\expandafter\newcommand\csname eq:t:opt:opt:trans:sum:squares@page\endcsname{4}
+
+\expandafter\newcommand\csname thmt@@prAtEndRestatevii@data@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.11b}
+\expandafter\newcommand\csname thmt@@prAtEndRestatevii@data@label\endcsname{\def \theequation {\@arabic {\c@equation }}\def \theHequation {(restate \theHthmt@dummyctr )11}\setcounter {equation}{11}}
+\expandafter\newcommand\csname thmt@@prAtEndRestatevii@data@page\endcsname{4}
+
+\expandafter\newcommand\csname thmt@@prAtEndRestatevii@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.5}
+\expandafter\newcommand\csname thmt@@prAtEndRestatevii@label\endcsname{5}
+\expandafter\newcommand\csname thmt@@prAtEndRestatevii@page\endcsname{4}
+
+\expandafter\newcommand\csname thm:prAtEndvii@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.5}
+\expandafter\newcommand\csname thm:prAtEndvii@label\endcsname{5}
+\expandafter\newcommand\csname thm:prAtEndvii@page\endcsname{4}
+
+\expandafter\newcommand\csname eq:coeffs:exact:translation@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.12}
+\expandafter\newcommand\csname eq:coeffs:exact:translation@label\endcsname{12}
+\expandafter\newcommand\csname eq:coeffs:exact:translation@page\endcsname{4}
+
+\expandafter\newcommand\csname alg:rbm:coeffs:approach@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#algorithm.3}
+\expandafter\newcommand\csname alg:rbm:coeffs:approach@label\endcsname{3}
+\expandafter\newcommand\csname alg:rbm:coeffs:approach@page\endcsname{4}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike6@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#section.2}
+\expandafter\newcommand\csname prAtEnd:sectionlike6@label\endcsname{II.}
+\expandafter\newcommand\csname prAtEnd:sectionlike6@page\endcsname{4}
+
+\expandafter\newcommand\csname sec:EXP@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#section.2}
+\expandafter\newcommand\csname sec:EXP@label\endcsname{II.}
+\expandafter\newcommand\csname sec:EXP@page\endcsname{4}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike7@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.2.1}
+\expandafter\newcommand\csname prAtEnd:sectionlike7@label\endcsname{A.}
+\expandafter\newcommand\csname prAtEnd:sectionlike7@page\endcsname{4}
+
+\expandafter\newcommand\csname sec:DATA-EVAL@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.2.1}
+\expandafter\newcommand\csname sec:DATA-EVAL@label\endcsname{A.}
+\expandafter\newcommand\csname sec:DATA-EVAL@page\endcsname{4}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike8@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.2.2}
+\expandafter\newcommand\csname prAtEnd:sectionlike8@label\endcsname{B.}
+\expandafter\newcommand\csname prAtEnd:sectionlike8@page\endcsname{4}
+
+\expandafter\newcommand\csname sec:RESULTS@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.2.2}
+\expandafter\newcommand\csname sec:RESULTS@label\endcsname{B.}
+\expandafter\newcommand\csname sec:RESULTS@page\endcsname{4}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike9@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.2.3}
+\expandafter\newcommand\csname prAtEnd:sectionlike9@label\endcsname{C.}
+\expandafter\newcommand\csname prAtEnd:sectionlike9@page\endcsname{5}
+
+\expandafter\newcommand\csname sec:RESULTS-jacinto@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.2.3}
+\expandafter\newcommand\csname sec:RESULTS-jacinto@label\endcsname{C.}
+\expandafter\newcommand\csname sec:RESULTS-jacinto@page\endcsname{5}
+
+\expandafter\newcommand\csname fig:armadillo:sigma:0@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.3}
+\expandafter\newcommand\csname fig:armadillo:sigma:0@label\endcsname{1a}
+\expandafter\newcommand\csname fig:armadillo:sigma:0@page\endcsname{5}
+
+\expandafter\newcommand\csname sub@fig:armadillo:sigma:0@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.3}
+\expandafter\newcommand\csname sub@fig:armadillo:sigma:0@label\endcsname{a}
+\expandafter\newcommand\csname sub@fig:armadillo:sigma:0@page\endcsname{5}
+
+\expandafter\newcommand\csname fig:armadillo:sigma:0:001@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.3}
+\expandafter\newcommand\csname fig:armadillo:sigma:0:001@label\endcsname{1b}
+\expandafter\newcommand\csname fig:armadillo:sigma:0:001@page\endcsname{5}
+
+\expandafter\newcommand\csname sub@fig:armadillo:sigma:0:001@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.3}
+\expandafter\newcommand\csname sub@fig:armadillo:sigma:0:001@label\endcsname{b}
+\expandafter\newcommand\csname sub@fig:armadillo:sigma:0:001@page\endcsname{5}
+
+\expandafter\newcommand\csname fig:armadillo:sigma:0:005@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.3}
+\expandafter\newcommand\csname fig:armadillo:sigma:0:005@label\endcsname{1c}
+\expandafter\newcommand\csname fig:armadillo:sigma:0:005@page\endcsname{5}
+
+\expandafter\newcommand\csname sub@fig:armadillo:sigma:0:005@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.3}
+\expandafter\newcommand\csname sub@fig:armadillo:sigma:0:005@label\endcsname{c}
+\expandafter\newcommand\csname sub@fig:armadillo:sigma:0:005@page\endcsname{5}
+
+\expandafter\newcommand\csname fig:armadillo:sigma:0:01@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.3}
+\expandafter\newcommand\csname fig:armadillo:sigma:0:01@label\endcsname{1d}
+\expandafter\newcommand\csname fig:armadillo:sigma:0:01@page\endcsname{5}
+
+\expandafter\newcommand\csname sub@fig:armadillo:sigma:0:01@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.3}
+\expandafter\newcommand\csname sub@fig:armadillo:sigma:0:01@label\endcsname{d}
+\expandafter\newcommand\csname sub@fig:armadillo:sigma:0:01@page\endcsname{5}
+
+\expandafter\newcommand\csname fig:armadillo:sigma:0:02@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.3}
+\expandafter\newcommand\csname fig:armadillo:sigma:0:02@label\endcsname{1e}
+\expandafter\newcommand\csname fig:armadillo:sigma:0:02@page\endcsname{5}
+
+\expandafter\newcommand\csname sub@fig:armadillo:sigma:0:02@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.3}
+\expandafter\newcommand\csname sub@fig:armadillo:sigma:0:02@label\endcsname{e}
+\expandafter\newcommand\csname sub@fig:armadillo:sigma:0:02@page\endcsname{5}
+
+\expandafter\newcommand\csname fig:armadillo:increased:noise@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.3}
+\expandafter\newcommand\csname fig:armadillo:increased:noise@label\endcsname{1}
+\expandafter\newcommand\csname fig:armadillo:increased:noise@page\endcsname{5}
+
+\expandafter\newcommand\csname fig:bunny:spheres@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.4}
+\expandafter\newcommand\csname fig:bunny:spheres@label\endcsname{2a}
+\expandafter\newcommand\csname fig:bunny:spheres@page\endcsname{5}
+
+\expandafter\newcommand\csname sub@fig:bunny:spheres@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.4}
+\expandafter\newcommand\csname sub@fig:bunny:spheres@label\endcsname{a}
+\expandafter\newcommand\csname sub@fig:bunny:spheres@page\endcsname{5}
+
+\expandafter\newcommand\csname fig:bunny:circles@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.4}
+\expandafter\newcommand\csname fig:bunny:circles@label\endcsname{2b}
+\expandafter\newcommand\csname fig:bunny:circles@page\endcsname{5}
+
+\expandafter\newcommand\csname sub@fig:bunny:circles@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.4}
+\expandafter\newcommand\csname sub@fig:bunny:circles@label\endcsname{b}
+\expandafter\newcommand\csname sub@fig:bunny:circles@page\endcsname{5}
+
+\expandafter\newcommand\csname fig:bunny:arrows@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.4}
+\expandafter\newcommand\csname fig:bunny:arrows@label\endcsname{2c}
+\expandafter\newcommand\csname fig:bunny:arrows@page\endcsname{5}
+
+\expandafter\newcommand\csname sub@fig:bunny:arrows@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.4}
+\expandafter\newcommand\csname sub@fig:bunny:arrows@label\endcsname{c}
+\expandafter\newcommand\csname sub@fig:bunny:arrows@page\endcsname{5}
+
+\expandafter\newcommand\csname fig:bunny:with:primitives@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.4}
+\expandafter\newcommand\csname fig:bunny:with:primitives@label\endcsname{2}
+\expandafter\newcommand\csname fig:bunny:with:primitives@page\endcsname{5}
+
+\expandafter\newcommand\csname fig:armadillo:spheres@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.5}
+\expandafter\newcommand\csname fig:armadillo:spheres@label\endcsname{3a}
+\expandafter\newcommand\csname fig:armadillo:spheres@page\endcsname{5}
+
+\expandafter\newcommand\csname sub@fig:armadillo:spheres@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.5}
+\expandafter\newcommand\csname sub@fig:armadillo:spheres@label\endcsname{a}
+\expandafter\newcommand\csname sub@fig:armadillo:spheres@page\endcsname{5}
+
+\expandafter\newcommand\csname fig:armadillo:circles@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.5}
+\expandafter\newcommand\csname fig:armadillo:circles@label\endcsname{3b}
+\expandafter\newcommand\csname fig:armadillo:circles@page\endcsname{5}
+
+\expandafter\newcommand\csname sub@fig:armadillo:circles@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.5}
+\expandafter\newcommand\csname sub@fig:armadillo:circles@label\endcsname{b}
+\expandafter\newcommand\csname sub@fig:armadillo:circles@page\endcsname{5}
+
+\expandafter\newcommand\csname fig:armadillo:arrows@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.5}
+\expandafter\newcommand\csname fig:armadillo:arrows@label\endcsname{3c}
+\expandafter\newcommand\csname fig:armadillo:arrows@page\endcsname{5}
+
+\expandafter\newcommand\csname sub@fig:armadillo:arrows@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.5}
+\expandafter\newcommand\csname sub@fig:armadillo:arrows@label\endcsname{c}
+\expandafter\newcommand\csname sub@fig:armadillo:arrows@page\endcsname{5}
+
+\expandafter\newcommand\csname fig:armadillo:with:primitives@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.5}
+\expandafter\newcommand\csname fig:armadillo:with:primitives@label\endcsname{3}
+\expandafter\newcommand\csname fig:armadillo:with:primitives@page\endcsname{5}
+
+\expandafter\newcommand\csname fig:bunny:unregistered@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.6}
+\expandafter\newcommand\csname fig:bunny:unregistered@label\endcsname{4a}
+\expandafter\newcommand\csname fig:bunny:unregistered@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:bunny:unregistered@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.6}
+\expandafter\newcommand\csname sub@fig:bunny:unregistered@label\endcsname{a}
+\expandafter\newcommand\csname sub@fig:bunny:unregistered@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:dragon:unregistered@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.6}
+\expandafter\newcommand\csname fig:dragon:unregistered@label\endcsname{4b}
+\expandafter\newcommand\csname fig:dragon:unregistered@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:dragon:unregistered@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.6}
+\expandafter\newcommand\csname sub@fig:dragon:unregistered@label\endcsname{b}
+\expandafter\newcommand\csname sub@fig:dragon:unregistered@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:armadillo:unregistered@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.6}
+\expandafter\newcommand\csname fig:armadillo:unregistered@label\endcsname{4c}
+\expandafter\newcommand\csname fig:armadillo:unregistered@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:armadillo:unregistered@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.6}
+\expandafter\newcommand\csname sub@fig:armadillo:unregistered@label\endcsname{c}
+\expandafter\newcommand\csname sub@fig:armadillo:unregistered@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:noisy:stanford:with:primitives:unregistered@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.6}
+\expandafter\newcommand\csname fig:noisy:stanford:with:primitives:unregistered@label\endcsname{4}
+\expandafter\newcommand\csname fig:noisy:stanford:with:primitives:unregistered@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:bunny:registered@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.7}
+\expandafter\newcommand\csname fig:bunny:registered@label\endcsname{5a}
+\expandafter\newcommand\csname fig:bunny:registered@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:bunny:registered@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.7}
+\expandafter\newcommand\csname sub@fig:bunny:registered@label\endcsname{a}
+\expandafter\newcommand\csname sub@fig:bunny:registered@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:dragon:registered@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.7}
+\expandafter\newcommand\csname fig:dragon:registered@label\endcsname{5b}
+\expandafter\newcommand\csname fig:dragon:registered@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:dragon:registered@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.7}
+\expandafter\newcommand\csname sub@fig:dragon:registered@label\endcsname{b}
+\expandafter\newcommand\csname sub@fig:dragon:registered@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:armadillo:registered@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.7}
+\expandafter\newcommand\csname fig:armadillo:registered@label\endcsname{5c}
+\expandafter\newcommand\csname fig:armadillo:registered@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:armadillo:registered@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.7}
+\expandafter\newcommand\csname sub@fig:armadillo:registered@label\endcsname{c}
+\expandafter\newcommand\csname sub@fig:armadillo:registered@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:noisy:stanford:with:primitives:registered@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.7}
+\expandafter\newcommand\csname fig:noisy:stanford:with:primitives:registered@label\endcsname{5}
+\expandafter\newcommand\csname fig:noisy:stanford:with:primitives:registered@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:bunny:noisy:unreg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.8}
+\expandafter\newcommand\csname fig:bunny:noisy:unreg@label\endcsname{6a}
+\expandafter\newcommand\csname fig:bunny:noisy:unreg@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:bunny:noisy:unreg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.8}
+\expandafter\newcommand\csname sub@fig:bunny:noisy:unreg@label\endcsname{a}
+\expandafter\newcommand\csname sub@fig:bunny:noisy:unreg@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:bunny:not:noisy:unreg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.8}
+\expandafter\newcommand\csname fig:bunny:not:noisy:unreg@label\endcsname{6b}
+\expandafter\newcommand\csname fig:bunny:not:noisy:unreg@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:bunny:not:noisy:unreg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.8}
+\expandafter\newcommand\csname sub@fig:bunny:not:noisy:unreg@label\endcsname{b}
+\expandafter\newcommand\csname sub@fig:bunny:not:noisy:unreg@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:bunny:noisy:reg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.8}
+\expandafter\newcommand\csname fig:bunny:noisy:reg@label\endcsname{6c}
+\expandafter\newcommand\csname fig:bunny:noisy:reg@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:bunny:noisy:reg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.8}
+\expandafter\newcommand\csname sub@fig:bunny:noisy:reg@label\endcsname{c}
+\expandafter\newcommand\csname sub@fig:bunny:noisy:reg@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:bunny:not:noisy:reg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.8}
+\expandafter\newcommand\csname fig:bunny:not:noisy:reg@label\endcsname{6d}
+\expandafter\newcommand\csname fig:bunny:not:noisy:reg@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:bunny:not:noisy:reg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.8}
+\expandafter\newcommand\csname sub@fig:bunny:not:noisy:reg@label\endcsname{d}
+\expandafter\newcommand\csname sub@fig:bunny:not:noisy:reg@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:bunny:reg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.8}
+\expandafter\newcommand\csname fig:bunny:reg@label\endcsname{6}
+\expandafter\newcommand\csname fig:bunny:reg@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:armadillo:noisy:unreg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.9}
+\expandafter\newcommand\csname fig:armadillo:noisy:unreg@label\endcsname{7a}
+\expandafter\newcommand\csname fig:armadillo:noisy:unreg@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:armadillo:noisy:unreg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.9}
+\expandafter\newcommand\csname sub@fig:armadillo:noisy:unreg@label\endcsname{a}
+\expandafter\newcommand\csname sub@fig:armadillo:noisy:unreg@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:armadillo:not:noisy:unreg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.9}
+\expandafter\newcommand\csname fig:armadillo:not:noisy:unreg@label\endcsname{7b}
+\expandafter\newcommand\csname fig:armadillo:not:noisy:unreg@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:armadillo:not:noisy:unreg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.9}
+\expandafter\newcommand\csname sub@fig:armadillo:not:noisy:unreg@label\endcsname{b}
+\expandafter\newcommand\csname sub@fig:armadillo:not:noisy:unreg@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:armadillo:noisy:reg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.9}
+\expandafter\newcommand\csname fig:armadillo:noisy:reg@label\endcsname{7c}
+\expandafter\newcommand\csname fig:armadillo:noisy:reg@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:armadillo:noisy:reg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.9}
+\expandafter\newcommand\csname sub@fig:armadillo:noisy:reg@label\endcsname{c}
+\expandafter\newcommand\csname sub@fig:armadillo:noisy:reg@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:armadillo:not:noisy:reg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.9}
+\expandafter\newcommand\csname fig:armadillo:not:noisy:reg@label\endcsname{7d}
+\expandafter\newcommand\csname fig:armadillo:not:noisy:reg@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:armadillo:not:noisy:reg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.9}
+\expandafter\newcommand\csname sub@fig:armadillo:not:noisy:reg@label\endcsname{d}
+\expandafter\newcommand\csname sub@fig:armadillo:not:noisy:reg@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:armadillo:reg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.9}
+\expandafter\newcommand\csname fig:armadillo:reg@label\endcsname{7}
+\expandafter\newcommand\csname fig:armadillo:reg@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:dragon:noisy:unreg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.10}
+\expandafter\newcommand\csname fig:dragon:noisy:unreg@label\endcsname{8a}
+\expandafter\newcommand\csname fig:dragon:noisy:unreg@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:dragon:noisy:unreg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.10}
+\expandafter\newcommand\csname sub@fig:dragon:noisy:unreg@label\endcsname{a}
+\expandafter\newcommand\csname sub@fig:dragon:noisy:unreg@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:dragon:not:noisy:unreg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.10}
+\expandafter\newcommand\csname fig:dragon:not:noisy:unreg@label\endcsname{8b}
+\expandafter\newcommand\csname fig:dragon:not:noisy:unreg@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:dragon:not:noisy:unreg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.10}
+\expandafter\newcommand\csname sub@fig:dragon:not:noisy:unreg@label\endcsname{b}
+\expandafter\newcommand\csname sub@fig:dragon:not:noisy:unreg@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:dragon:noisy:reg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.10}
+\expandafter\newcommand\csname fig:dragon:noisy:reg@label\endcsname{8c}
+\expandafter\newcommand\csname fig:dragon:noisy:reg@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:dragon:noisy:reg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.10}
+\expandafter\newcommand\csname sub@fig:dragon:noisy:reg@label\endcsname{c}
+\expandafter\newcommand\csname sub@fig:dragon:noisy:reg@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:dragon:not:noisy:reg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.10}
+\expandafter\newcommand\csname fig:dragon:not:noisy:reg@label\endcsname{8d}
+\expandafter\newcommand\csname fig:dragon:not:noisy:reg@page\endcsname{6}
+
+\expandafter\newcommand\csname sub@fig:dragon:not:noisy:reg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.10}
+\expandafter\newcommand\csname sub@fig:dragon:not:noisy:reg@label\endcsname{d}
+\expandafter\newcommand\csname sub@fig:dragon:not:noisy:reg@page\endcsname{6}
+
+\expandafter\newcommand\csname fig:dragon:reg@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#figure.caption.10}
+\expandafter\newcommand\csname fig:dragon:reg@label\endcsname{8}
+\expandafter\newcommand\csname fig:dragon:reg@page\endcsname{6}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike10@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.2.4}
+\expandafter\newcommand\csname prAtEnd:sectionlike10@label\endcsname{D.}
+\expandafter\newcommand\csname prAtEnd:sectionlike10@page\endcsname{6}
+
+\expandafter\newcommand\csname sec:code:details@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.2.4}
+\expandafter\newcommand\csname sec:code:details@label\endcsname{D.}
+\expandafter\newcommand\csname sec:code:details@page\endcsname{6}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike11@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#section.3}
+\expandafter\newcommand\csname prAtEnd:sectionlike11@label\endcsname{III.}
+\expandafter\newcommand\csname prAtEnd:sectionlike11@page\endcsname{6}
+
+\expandafter\newcommand\csname sec:CONCLUSIONS@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#section.3}
+\expandafter\newcommand\csname sec:CONCLUSIONS@label\endcsname{III.}
+\expandafter\newcommand\csname sec:CONCLUSIONS@page\endcsname{6}
+
+\expandafter\newcommand\csname tab:Bunny-jan@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#table.caption.11}
+\expandafter\newcommand\csname tab:Bunny-jan@label\endcsname{1}
+\expandafter\newcommand\csname tab:Bunny-jan@page\endcsname{7}
+
+\expandafter\newcommand\csname tab:Armadillo-jan@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#table.caption.12}
+\expandafter\newcommand\csname tab:Armadillo-jan@label\endcsname{2}
+\expandafter\newcommand\csname tab:Armadillo-jan@page\endcsname{7}
+
+\expandafter\newcommand\csname tab:Dragon-jan@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#table.caption.13}
+\expandafter\newcommand\csname tab:Dragon-jan@label\endcsname{3}
+\expandafter\newcommand\csname tab:Dragon-jan@page\endcsname{7}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike12@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#appendix.1.A}
+\expandafter\newcommand\csname prAtEnd:sectionlike12@label\endcsname{A}
+\expandafter\newcommand\csname prAtEnd:sectionlike12@page\endcsname{11}
+
+\expandafter\newcommand\csname sec:GA@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#appendix.1.A}
+\expandafter\newcommand\csname sec:GA@label\endcsname{A}
+\expandafter\newcommand\csname sec:GA@page\endcsname{11}
+
+\expandafter\newcommand\csname eq:com-prod@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.14}
+\expandafter\newcommand\csname eq:com-prod@label\endcsname{14}
+\expandafter\newcommand\csname eq:com-prod@page\endcsname{11}
+
+\expandafter\newcommand\csname eq:GA:canonical:basis@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.16}
+\expandafter\newcommand\csname eq:GA:canonical:basis@label\endcsname{16}
+\expandafter\newcommand\csname eq:GA:canonical:basis@page\endcsname{11}
+
+\expandafter\newcommand\csname eq:basis:multivectors:Gpq@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.17}
+\expandafter\newcommand\csname eq:basis:multivectors:Gpq@label\endcsname{17}
+\expandafter\newcommand\csname eq:basis:multivectors:Gpq@page\endcsname{11}
+
+\expandafter\newcommand\csname eq:sum:grades@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.20}
+\expandafter\newcommand\csname eq:sum:grades@label\endcsname{20}
+\expandafter\newcommand\csname eq:sum:grades@page\endcsname{11}
+
+\expandafter\newcommand\csname eq:multiple:grade:proj@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.21d}
+\expandafter\newcommand\csname eq:multiple:grade:proj@label\endcsname{21d}
+\expandafter\newcommand\csname eq:multiple:grade:proj@page\endcsname{12}
+
+\expandafter\newcommand\csname eq:dagger:prop:1@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.23a}
+\expandafter\newcommand\csname eq:dagger:prop:1@label\endcsname{23a}
+\expandafter\newcommand\csname eq:dagger:prop:1@page\endcsname{12}
+
+\expandafter\newcommand\csname eq:dagger:product:of:vectors@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.24}
+\expandafter\newcommand\csname eq:dagger:product:of:vectors@label\endcsname{24}
+\expandafter\newcommand\csname eq:dagger:product:of:vectors@page\endcsname{12}
+
+\expandafter\newcommand\csname eq:dagger:contas@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.25}
+\expandafter\newcommand\csname eq:dagger:contas@label\endcsname{25}
+\expandafter\newcommand\csname eq:dagger:contas@page\endcsname{12}
+
+\expandafter\newcommand\csname eq:dagger:scalar:product@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.29b}
+\expandafter\newcommand\csname eq:dagger:scalar:product@label\endcsname{29b}
+\expandafter\newcommand\csname eq:dagger:scalar:product@page\endcsname{12}
+
+\expandafter\newcommand\csname eq:commutation:property@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.29d}
+\expandafter\newcommand\csname eq:commutation:property@label\endcsname{29d}
+\expandafter\newcommand\csname eq:commutation:property@page\endcsname{13}
+
+\expandafter\newcommand\csname eq:A:dagger:star:B@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.29e}
+\expandafter\newcommand\csname eq:A:dagger:star:B@label\endcsname{29e}
+\expandafter\newcommand\csname eq:A:dagger:star:B@page\endcsname{13}
+
+\expandafter\newcommand\csname eq:scalar:inner@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.30}
+\expandafter\newcommand\csname eq:scalar:inner@label\endcsname{30}
+\expandafter\newcommand\csname eq:scalar:inner@page\endcsname{13}
+
+\expandafter\newcommand\csname eq:scalar:diff:grade@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.31}
+\expandafter\newcommand\csname eq:scalar:diff:grade@label\endcsname{31}
+\expandafter\newcommand\csname eq:scalar:diff:grade@page\endcsname{13}
+
+\expandafter\newcommand\csname eq:inverse:simple:mlvectors@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.33}
+\expandafter\newcommand\csname eq:inverse:simple:mlvectors@label\endcsname{33}
+\expandafter\newcommand\csname eq:inverse:simple:mlvectors@page\endcsname{13}
+
+\expandafter\newcommand\csname norm:positive:negative:sigs@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.34}
+\expandafter\newcommand\csname norm:positive:negative:sigs@label\endcsname{34}
+\expandafter\newcommand\csname norm:positive:negative:sigs@page\endcsname{13}
+
+\expandafter\newcommand\csname norm:negative:negative:sigs@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.35}
+\expandafter\newcommand\csname norm:negative:negative:sigs@label\endcsname{35}
+\expandafter\newcommand\csname norm:negative:negative:sigs@page\endcsname{13}
+
+\expandafter\newcommand\csname eq:anticommute:k:blade@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.36b}
+\expandafter\newcommand\csname eq:anticommute:k:blade@label\endcsname{36b}
+\expandafter\newcommand\csname eq:anticommute:k:blade@page\endcsname{13}
+
+\expandafter\newcommand\csname eq:inner:geo:prod@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.37a}
+\expandafter\newcommand\csname eq:inner:geo:prod@label\endcsname{37a}
+\expandafter\newcommand\csname eq:inner:geo:prod@page\endcsname{14}
+
+\expandafter\newcommand\csname eq:inner:outer:geo@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.37b}
+\expandafter\newcommand\csname eq:inner:outer:geo@label\endcsname{37}
+\expandafter\newcommand\csname eq:inner:outer:geo@page\endcsname{14}
+
+\expandafter\newcommand\csname eq:geo:inner:outer:prods@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.37d}
+\expandafter\newcommand\csname eq:geo:inner:outer:prods@label\endcsname{37d}
+\expandafter\newcommand\csname eq:geo:inner:outer:prods@page\endcsname{14}
+
+\expandafter\newcommand\csname eq:reorder:rules:inner@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.38a}
+\expandafter\newcommand\csname eq:reorder:rules:inner@label\endcsname{38a}
+\expandafter\newcommand\csname eq:reorder:rules:inner@page\endcsname{14}
+
+\expandafter\newcommand\csname eq:reorder:rules:wedge@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.38b}
+\expandafter\newcommand\csname eq:reorder:rules:wedge@label\endcsname{38b}
+\expandafter\newcommand\csname eq:reorder:rules:wedge@page\endcsname{14}
+
+\expandafter\newcommand\csname eq:projection:def@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.39}
+\expandafter\newcommand\csname eq:projection:def@label\endcsname{39}
+\expandafter\newcommand\csname eq:projection:def@page\endcsname{14}
+
+\expandafter\newcommand\csname eq:unit:pseudoscalar@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.41b}
+\expandafter\newcommand\csname eq:unit:pseudoscalar@label\endcsname{41}
+\expandafter\newcommand\csname eq:unit:pseudoscalar@page\endcsname{14}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike13@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.1.A.1}
+\expandafter\newcommand\csname prAtEnd:sectionlike13@label\endcsname{A.}
+\expandafter\newcommand\csname prAtEnd:sectionlike13@page\endcsname{14}
+
+\expandafter\newcommand\csname eq:sum:square:inner:outer:geo@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.42c}
+\expandafter\newcommand\csname eq:sum:square:inner:outer:geo@label\endcsname{42c}
+\expandafter\newcommand\csname eq:sum:square:inner:outer:geo@page\endcsname{14}
+
+\expandafter\newcommand\csname eq:scalar:wedge:1:k:k+1/k-1@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.43b}
+\expandafter\newcommand\csname eq:scalar:wedge:1:k:k+1/k-1@label\endcsname{43}
+\expandafter\newcommand\csname eq:scalar:wedge:1:k:k+1/k-1@page\endcsname{15}
+
+\expandafter\newcommand\csname eq:proj:geo:prod@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.44}
+\expandafter\newcommand\csname eq:proj:geo:prod@label\endcsname{44}
+\expandafter\newcommand\csname eq:proj:geo:prod@page\endcsname{15}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike14@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#appendix.1.B}
+\expandafter\newcommand\csname prAtEnd:sectionlike14@label\endcsname{B}
+\expandafter\newcommand\csname prAtEnd:sectionlike14@page\endcsname{15}
+
+\expandafter\newcommand\csname sec:diff:mv@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#appendix.1.B}
+\expandafter\newcommand\csname sec:diff:mv@label\endcsname{B}
+\expandafter\newcommand\csname sec:diff:mv@page\endcsname{15}
+
+\expandafter\newcommand\csname eq:dir:der:vectors@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.47d}
+\expandafter\newcommand\csname eq:dir:der:vectors@label\endcsname{47d}
+\expandafter\newcommand\csname eq:dir:der:vectors@page\endcsname{15}
+
+\expandafter\newcommand\csname eq:chain:rule@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.48a}
+\expandafter\newcommand\csname eq:chain:rule@label\endcsname{48a}
+\expandafter\newcommand\csname eq:chain:rule@page\endcsname{15}
+
+\expandafter\newcommand\csname eq:dir:der:multivectors@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.50}
+\expandafter\newcommand\csname eq:dir:der:multivectors@label\endcsname{50}
+\expandafter\newcommand\csname eq:dir:der:multivectors@page\endcsname{15}
+
+\expandafter\newcommand\csname eq:prod:rule:grade:proj@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.51e}
+\expandafter\newcommand\csname eq:prod:rule:grade:proj@label\endcsname{51e}
+\expandafter\newcommand\csname eq:prod:rule:grade:proj@page\endcsname{16}
+
+\expandafter\newcommand\csname eq:derivatives:properties@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.51f}
+\expandafter\newcommand\csname eq:derivatives:properties@label\endcsname{51}
+\expandafter\newcommand\csname eq:derivatives:properties@page\endcsname{16}
+
+\expandafter\newcommand\csname eq:dir:deriv@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.52}
+\expandafter\newcommand\csname eq:dir:deriv@label\endcsname{52}
+\expandafter\newcommand\csname eq:dir:deriv@page\endcsname{16}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike15@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#appendix.1.C}
+\expandafter\newcommand\csname prAtEnd:sectionlike15@label\endcsname{C}
+\expandafter\newcommand\csname prAtEnd:sectionlike15@page\endcsname{16}
+
+\expandafter\newcommand\csname sec:CGA@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#appendix.1.C}
+\expandafter\newcommand\csname sec:CGA@label\endcsname{C}
+\expandafter\newcommand\csname sec:CGA@page\endcsname{16}
+
+\expandafter\newcommand\csname eq:the:conformal:mapping@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.53a}
+\expandafter\newcommand\csname eq:the:conformal:mapping@label\endcsname{53a}
+\expandafter\newcommand\csname eq:the:conformal:mapping@page\endcsname{16}
+
+\expandafter\newcommand\csname eq:eo:einf:conf:mapping:CGA@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.53b}
+\expandafter\newcommand\csname eq:eo:einf:conf:mapping:CGA@label\endcsname{53}
+\expandafter\newcommand\csname eq:eo:einf:conf:mapping:CGA@page\endcsname{16}
+
+\expandafter\newcommand\csname eq:def:translation@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.56a}
+\expandafter\newcommand\csname eq:def:translation@label\endcsname{56a}
+\expandafter\newcommand\csname eq:def:translation@page\endcsname{16}
+
+\expandafter\newcommand\csname eq:rot:trans:emb:relations@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.56c}
+\expandafter\newcommand\csname eq:rot:trans:emb:relations@label\endcsname{56}
+\expandafter\newcommand\csname eq:rot:trans:emb:relations@page\endcsname{16}
+
+\expandafter\newcommand\csname eq:coefficients:of:P@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.57}
+\expandafter\newcommand\csname eq:coefficients:of:P@label\endcsname{57}
+\expandafter\newcommand\csname eq:coefficients:of:P@page\endcsname{17}
+
+\expandafter\newcommand\csname The:coefficients:functions@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.58d}
+\expandafter\newcommand\csname The:coefficients:functions@label\endcsname{58}
+\expandafter\newcommand\csname The:coefficients:functions@page\endcsname{17}
+
+\expandafter\newcommand\csname eq:def:dist:squared:CGA:translation@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.59}
+\expandafter\newcommand\csname eq:def:dist:squared:CGA:translation@label\endcsname{59}
+\expandafter\newcommand\csname eq:def:dist:squared:CGA:translation@page\endcsname{17}
+
+\expandafter\newcommand\csname proofsection:prAtEndiv@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.59}
+\expandafter\newcommand\csname proofsection:prAtEndiv@label\endcsname{C}
+\expandafter\newcommand\csname proofsection:prAtEndiv@page\endcsname{17}
+
+\expandafter\newcommand\csname proof:prAtEndiv@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#section*.16}
+\expandafter\newcommand\csname proof:prAtEndiv@label\endcsname{C}
+\expandafter\newcommand\csname proof:prAtEndiv@page\endcsname{17}
+
+\expandafter\newcommand\csname eq:trans:T(A):with:proof@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.60c}
+\expandafter\newcommand\csname eq:trans:T(A):with:proof@label\endcsname{60c}
+\expandafter\newcommand\csname eq:trans:T(A):with:proof@page\endcsname{17}
+
+\expandafter\newcommand\csname eq:translation:of:coeffs:of:P@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.62a}
+\expandafter\newcommand\csname eq:translation:of:coeffs:of:P@label\endcsname{62a}
+\expandafter\newcommand\csname eq:translation:of:coeffs:of:P@page\endcsname{17}
+
+\expandafter\newcommand\csname eq:rotation:pf:coeffs:of:P@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.62b}
+\expandafter\newcommand\csname eq:rotation:pf:coeffs:of:P@label\endcsname{62b}
+\expandafter\newcommand\csname eq:rotation:pf:coeffs:of:P@page\endcsname{18}
+
+\expandafter\newcommand\csname proofsection:prAtEndvii@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.(restate dummy.7)11}
+\expandafter\newcommand\csname proofsection:prAtEndvii@label\endcsname{C}
+\expandafter\newcommand\csname proofsection:prAtEndvii@page\endcsname{18}
+
+\expandafter\newcommand\csname proof:prAtEndvii@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#section*.17}
+\expandafter\newcommand\csname proof:prAtEndvii@label\endcsname{C}
+\expandafter\newcommand\csname proof:prAtEndvii@page\endcsname{18}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike16@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.1.C.1}
+\expandafter\newcommand\csname prAtEnd:sectionlike16@label\endcsname{A.}
+\expandafter\newcommand\csname prAtEnd:sectionlike16@page\endcsname{18}
+
+\expandafter\newcommand\csname sec:ext:euc:CGA@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#subsection.1.C.1}
+\expandafter\newcommand\csname sec:ext:euc:CGA@label\endcsname{A.}
+\expandafter\newcommand\csname sec:ext:euc:CGA@page\endcsname{18}
+
+\expandafter\newcommand\csname eq:euclidean:points@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.63}
+\expandafter\newcommand\csname eq:euclidean:points@label\endcsname{63}
+\expandafter\newcommand\csname eq:euclidean:points@page\endcsname{18}
+
+\expandafter\newcommand\csname eq:conformal:points@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.64b}
+\expandafter\newcommand\csname eq:conformal:points@label\endcsname{64}
+\expandafter\newcommand\csname eq:conformal:points@page\endcsname{18}
+
+\expandafter\newcommand\csname theo:noise:cga:embedding@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.6}
+\expandafter\newcommand\csname theo:noise:cga:embedding@label\endcsname{6}
+\expandafter\newcommand\csname theo:noise:cga:embedding@page\endcsname{19}
+
+\expandafter\newcommand\csname eq:q:p:noisy:trans:rot@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.65a}
+\expandafter\newcommand\csname eq:q:p:noisy:trans:rot@label\endcsname{65a}
+\expandafter\newcommand\csname eq:q:p:noisy:trans:rot@page\endcsname{19}
+
+\expandafter\newcommand\csname eq:the:other:conformal:noise@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.66a}
+\expandafter\newcommand\csname eq:the:other:conformal:noise@label\endcsname{66a}
+\expandafter\newcommand\csname eq:the:other:conformal:noise@page\endcsname{19}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike17@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#appendix.1.D}
+\expandafter\newcommand\csname prAtEnd:sectionlike17@label\endcsname{D}
+\expandafter\newcommand\csname prAtEnd:sectionlike17@page\endcsname{20}
+
+\expandafter\newcommand\csname sec:multi:trans@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#appendix.1.D}
+\expandafter\newcommand\csname sec:multi:trans@label\endcsname{D}
+\expandafter\newcommand\csname sec:multi:trans@page\endcsname{20}
+
+\expandafter\newcommand\csname eq:adjoint:def@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.71c}
+\expandafter\newcommand\csname eq:adjoint:def@label\endcsname{71c}
+\expandafter\newcommand\csname eq:adjoint:def@page\endcsname{20}
+
+\expandafter\newcommand\csname eq:implication:adjoint@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.71d}
+\expandafter\newcommand\csname eq:implication:adjoint@label\endcsname{71d}
+\expandafter\newcommand\csname eq:implication:adjoint@page\endcsname{20}
+
+\expandafter\newcommand\csname theo:symmetric:multi@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.7}
+\expandafter\newcommand\csname theo:symmetric:multi@label\endcsname{7}
+\expandafter\newcommand\csname theo:symmetric:multi@page\endcsname{20}
+
+\expandafter\newcommand\csname def:eigenmultivector@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#definition.6}
+\expandafter\newcommand\csname def:eigenmultivector@label\endcsname{6}
+\expandafter\newcommand\csname def:eigenmultivector@page\endcsname{20}
+
+\expandafter\newcommand\csname eq:eig:FX:lambdaX@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.75}
+\expandafter\newcommand\csname eq:eig:FX:lambdaX@label\endcsname{75}
+\expandafter\newcommand\csname eq:eig:FX:lambdaX@page\endcsname{20}
+
+\expandafter\newcommand\csname theo:multiliner:spectral:decomp@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.8}
+\expandafter\newcommand\csname theo:multiliner:spectral:decomp@label\endcsname{8}
+\expandafter\newcommand\csname theo:multiliner:spectral:decomp@page\endcsname{20}
+
+\expandafter\newcommand\csname eq:spectral:decomp@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.76a}
+\expandafter\newcommand\csname eq:spectral:decomp@label\endcsname{76a}
+\expandafter\newcommand\csname eq:spectral:decomp@page\endcsname{20}
+
+\expandafter\newcommand\csname lemma:eigendecomp:G=UFU@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#lemma.1}
+\expandafter\newcommand\csname lemma:eigendecomp:G=UFU@label\endcsname{1}
+\expandafter\newcommand\csname lemma:eigendecomp:G=UFU@page\endcsname{21}
+
+\expandafter\newcommand\csname eq:ref:Q:s:U(P):1@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.77ba}
+\expandafter\newcommand\csname eq:ref:Q:s:U(P):1@label\endcsname{77ba}
+\expandafter\newcommand\csname eq:ref:Q:s:U(P):1@page\endcsname{21}
+
+\expandafter\newcommand\csname eq:ref:Q:s:U(P):2@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.77bb}
+\expandafter\newcommand\csname eq:ref:Q:s:U(P):2@label\endcsname{77bb}
+\expandafter\newcommand\csname eq:ref:Q:s:U(P):2@page\endcsname{21}
+
+\expandafter\newcommand\csname eq:ref:Q:s:U(P)@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#AMS.18}
+\expandafter\newcommand\csname eq:ref:Q:s:U(P)@label\endcsname{77b}
+\expandafter\newcommand\csname eq:ref:Q:s:U(P)@page\endcsname{21}
+
+\expandafter\newcommand\csname proofsection:prAtEndiii@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.(restate dummy.8)4}
+\expandafter\newcommand\csname proofsection:prAtEndiii@label\endcsname{D}
+\expandafter\newcommand\csname proofsection:prAtEndiii@page\endcsname{21}
+
+\expandafter\newcommand\csname proof:prAtEndiii@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#section*.19}
+\expandafter\newcommand\csname proof:prAtEndiii@label\endcsname{D}
+\expandafter\newcommand\csname proof:prAtEndiii@page\endcsname{21}
+
+\expandafter\newcommand\csname eq:scalar:prod:scaled:relation@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.5}
+\expandafter\newcommand\csname eq:scalar:prod:scaled:relation@label\endcsname{5}
+\expandafter\newcommand\csname eq:scalar:prod:scaled:relation@page\endcsname{21}
+
+\expandafter\newcommand\csname thmt@@prAtEndRestateviii@data@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.5}
+\expandafter\newcommand\csname thmt@@prAtEndRestateviii@data@label\endcsname{\def \theequation {\@arabic {\c@equation }}\def \theHequation {(restate \theHthmt@dummyctr )5}\setcounter {equation}{5}}
+\expandafter\newcommand\csname thmt@@prAtEndRestateviii@data@page\endcsname{21}
+
+\expandafter\newcommand\csname thmt@@prAtEndRestateviii@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.9}
+\expandafter\newcommand\csname thmt@@prAtEndRestateviii@label\endcsname{9}
+\expandafter\newcommand\csname thmt@@prAtEndRestateviii@page\endcsname{21}
+
+\expandafter\newcommand\csname thm:prAtEndviii@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.9}
+\expandafter\newcommand\csname thm:prAtEndviii@label\endcsname{9}
+\expandafter\newcommand\csname thm:prAtEndviii@page\endcsname{21}
+
+\expandafter\newcommand\csname theo:sign:est:vectors@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.9}
+\expandafter\newcommand\csname theo:sign:est:vectors@label\endcsname{9}
+\expandafter\newcommand\csname theo:sign:est:vectors@page\endcsname{21}
+
+\expandafter\newcommand\csname eq:refes:from:vectors@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.6b}
+\expandafter\newcommand\csname eq:refes:from:vectors@label\endcsname{6}
+\expandafter\newcommand\csname eq:refes:from:vectors@page\endcsname{21}
+
+\expandafter\newcommand\csname eq:mean:multiclouds:1@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.7a}
+\expandafter\newcommand\csname eq:mean:multiclouds:1@label\endcsname{7a}
+\expandafter\newcommand\csname eq:mean:multiclouds:1@page\endcsname{21}
+
+\expandafter\newcommand\csname eq:mean:multiclouds:2@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.7b}
+\expandafter\newcommand\csname eq:mean:multiclouds:2@label\endcsname{7b}
+\expandafter\newcommand\csname eq:mean:multiclouds:2@page\endcsname{21}
+
+\expandafter\newcommand\csname eq:mean:multiclouds@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#AMS.20}
+\expandafter\newcommand\csname eq:mean:multiclouds@label\endcsname{7}
+\expandafter\newcommand\csname eq:mean:multiclouds@page\endcsname{21}
+
+\expandafter\newcommand\csname def:multi:space@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#definition.7}
+\expandafter\newcommand\csname def:multi:space@label\endcsname{7}
+\expandafter\newcommand\csname def:multi:space@page\endcsname{22}
+
+\expandafter\newcommand\csname prAtEnd:sectionlike18@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#appendix.1.E}
+\expandafter\newcommand\csname prAtEnd:sectionlike18@label\endcsname{E}
+\expandafter\newcommand\csname prAtEnd:sectionlike18@page\endcsname{22}
+
+\expandafter\newcommand\csname sec:opt:appendix@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#appendix.1.E}
+\expandafter\newcommand\csname sec:opt:appendix@label\endcsname{E}
+\expandafter\newcommand\csname sec:opt:appendix@page\endcsname{22}
+
+\expandafter\newcommand\csname theo:multilinear:constraint@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#lemma.3}
+\expandafter\newcommand\csname theo:multilinear:constraint@label\endcsname{3}
+\expandafter\newcommand\csname theo:multilinear:constraint@page\endcsname{22}
+
+\expandafter\newcommand\csname theo:maxi:lagrange:motor@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.10}
+\expandafter\newcommand\csname theo:maxi:lagrange:motor@label\endcsname{10}
+\expandafter\newcommand\csname theo:maxi:lagrange:motor@page\endcsname{22}
+
+\expandafter\newcommand\csname opt:versor:manifold:estimation@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.14}
+\expandafter\newcommand\csname opt:versor:manifold:estimation@label\endcsname{14}
+\expandafter\newcommand\csname opt:versor:manifold:estimation@page\endcsname{22}
+
+\expandafter\newcommand\csname theo:versor:R3@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#theorem.11}
+\expandafter\newcommand\csname theo:versor:R3@label\endcsname{11}
+\expandafter\newcommand\csname theo:versor:R3@page\endcsname{22}
+
+\expandafter\newcommand\csname proofsection:prAtEndv@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.18}
+\expandafter\newcommand\csname proofsection:prAtEndv@label\endcsname{E}
+\expandafter\newcommand\csname proofsection:prAtEndv@page\endcsname{23}
+
+\expandafter\newcommand\csname proof:prAtEndv@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#section*.21}
+\expandafter\newcommand\csname proof:prAtEndv@label\endcsname{E}
+\expandafter\newcommand\csname proof:prAtEndv@page\endcsname{23}
+
+\expandafter\newcommand\csname eq:lambda:F(R)R@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.24}
+\expandafter\newcommand\csname eq:lambda:F(R)R@label\endcsname{24}
+\expandafter\newcommand\csname eq:lambda:F(R)R@page\endcsname{23}
+
+\expandafter\newcommand\csname eq:F(R)R:cost:function@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.25}
+\expandafter\newcommand\csname eq:F(R)R:cost:function@label\endcsname{25}
+\expandafter\newcommand\csname eq:F(R)R:cost:function@page\endcsname{24}
+
+\expandafter\newcommand\csname proofsection:prAtEndvi@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.26}
+\expandafter\newcommand\csname proofsection:prAtEndvi@label\endcsname{E}
+\expandafter\newcommand\csname proofsection:prAtEndvi@page\endcsname{24}
+
+\expandafter\newcommand\csname proof:prAtEndvi@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#section*.22}
+\expandafter\newcommand\csname proof:prAtEndvi@label\endcsname{E}
+\expandafter\newcommand\csname proof:prAtEndvi@page\endcsname{24}
+
+\expandafter\newcommand\csname eq:CTST@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.27b}
+\expandafter\newcommand\csname eq:CTST@label\endcsname{27}
+\expandafter\newcommand\csname eq:CTST@page\endcsname{24}
+
+\expandafter\newcommand\csname eq:CTQT@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.28b}
+\expandafter\newcommand\csname eq:CTQT@label\endcsname{28}
+\expandafter\newcommand\csname eq:CTQT@page\endcsname{24}
+
+\expandafter\newcommand\csname eq:cost:expanded:opt:trans@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.30}
+\expandafter\newcommand\csname eq:cost:expanded:opt:trans@label\endcsname{30}
+\expandafter\newcommand\csname eq:cost:expanded:opt:trans@page\endcsname{24}
+
+\expandafter\newcommand\csname eq:t:derivative:of:J:opt:trans@link\endcsname{https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCRCGA/refs/heads/main/Appendix.pdf\#equation.31}
+\expandafter\newcommand\csname eq:t:derivative:of:J:opt:trans@label\endcsname{31}
+\expandafter\newcommand\csname eq:t:derivative:of:J:opt:trans@page\endcsname{24}
+
+\makeatother
