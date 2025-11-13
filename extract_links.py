@@ -12,7 +12,8 @@ base_url = "https://raw.githubusercontent.com/FranciscoVasconcelos/AppendixCFMCR
 # )
 rx = re.compile(r'\{(?:[^{}]+|(?R))+\}')
 
-aux_files = ["output.aux","appendix.aux"]
+# aux_files = ["output.aux","appendix.aux"]
+aux_files = ["output.aux"]
 
 with open("appendix_links.tex", "w") as out:
     out.write("\\makeatletter\n")
